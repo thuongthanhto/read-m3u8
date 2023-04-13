@@ -1,0 +1,16 @@
+:root {
+    --background-color: #e0e0e0;
+
+    --submit-button-color: #cf3636;
+    --submit-button-hover-color: #e46464;
+
+    --play-button-color: #42b4ab;
+    --play-button-hover-color: #62c7be;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Sono', sans-serif;
+}

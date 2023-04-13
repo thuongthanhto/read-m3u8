@@ -1,0 +1,124 @@
+@import url('./global.css');
+
+body {
+    background: var(--background-color);
+    padding: 0 10% 0 10%;
+    text-align: center;
+}
+
+#loading_sign {
+    visibility: hidden;
+}
+
+#loading_sign img {
+    margin: 0 auto;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    display: inherit;
+}
+
+#loading_sign p {
+    margin-top: 10px;
+    color: #00000077;
+    display: inherit;
+}
+
+#containter {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+
+#main {
+    width: 100%;
+    margin: 0;
+
+    position: absolute;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#main #panel {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    margin: 50px 0 50px 0;
+}
+
+#main video {
+    margin-bottom: 50px;
+    border: #00000000 3px solid;
+}
+
+#main #url_input {
+    width: 80%;
+    height: 100%;
+
+    padding-left: 20px;
+    font-size: 1em;
+
+    border: 0px;
+    outline: 0px;
+
+    border-radius: 15px;
+    background: linear-gradient(177deg, #cacaca, #f0f0f0);
+    box-shadow: 4px 4px 8px #cecece,
+        -4px -4px 8px #f2f2f2;
+}
+
+#main .panel-btn {
+    height: 100%;
+    margin-left: 10px;
+    padding: 0px 13px 0px 13px;
+    flex-grow: 1;
+
+    border-radius: 99px;
+    color: #FFFFFF;
+
+    border: 0px;
+    outline: 0px;
+
+    transition-duration: 0.3s;
+}
+
+#main #capture {
+    background: var(--submit-button-color);
+}
+
+#main #capture:hover {
+    cursor: pointer;
+    background: var(--submit-button-hover-color);
+}
+
+#main #play {
+    background: var(--play-button-color);
+}
+
+#main #play:hover {
+    cursor: pointer;
+    background: var(--play-button-hover-color);
+}
+
+.vjs-texttrack-settings {
+    display: none;
+}
+
+#main #output {
+    background: #000000;
+    color: #FFFFFF;
+
+    resize: none;
+
+    height: 100px;
+    max-height: 100px;
+    width: 100%;
+    max-width: 100%;
+}
+
+#progress_bar {
+    width: 100%;
+}
